@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démineurcraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <script src="jquery.js"></script>
+</head>
+<body>
+
+
+<table id="page">
+    <tr>
+        <!-- LE MENU -->
+        <td id="menu">
+            <!--LOGO-->
+            <div id="logo"></div>
+            <hi>Démineurcraft</hi>
+            <br>
+            <p>Choisissez votre difficulté</p>
+            <!--Les boutons-->
+            <div class="bouton" id="niv0">Enfantin</div>
+            <div class="bouton" id="niv1">Facile</div>
+            <div class="bouton" id="niv2">Moyen</div>
+            <div class="bouton" id="niv3">Difficile</div>
+        </td>
+
+        <!-- LE JEU-->
+        <td id="gameZone">
+            <div id="regles">
+                Règles du jeu :
+                <br> Steve veut aller miner du diamant sur son terrain. Mais en arrivant, il se rend compte que les monstres ont piégé le terrain avec de la TNT.
+                <br> Aide Steve à déminer la zone pour qu'il aille miner du diamant.
+                <br>
+                <br>
+                <div  id="rules">Chaque case de la grille peut soit cacher une mine, soit être vide. Le but du jeu est de découvrir toutes les cases libres sans faire exploser les mines, c'est-à-dire sans cliquer sur les cases qui les dissimulent. Lorsque le joueur clique sur une case libre comportant au moins une mine dans l'une de ses cases avoisinantes, un chiffre apparaît, indiquant ce nombre de mines. Si en revanche toutes les cases adjacentes sont vides, une case vide est affichée et la même opération est répétée sur ces cases, et ce jusqu'à ce que la zone vide soit entièrement délimitée par des chiffres. En comparant les différentes informations récoltées, le joueur peut ainsi progresser dans le déminage du terrain. S'il se trompe et clique sur une mine, il a perdu.</div>
+            </div>
+            <!--Tableau du démineur-->
+            <table id="grille">
+                
+            </table>
+            <div id="resultat"></div>
+        </td>
+    </tr>
+
+</table>
+    <script src="demineur.js"></script>
+</body>
+</html>
